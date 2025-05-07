@@ -12,5 +12,5 @@ read f1
 touch "$dir1/$f1.txt"
 echo "enter file no 2 name:"
 read f2
-touch "$dir1/$f1.txt"
+touch "$dir1/$f2.txt"
 echo "file created"
