@@ -1,0 +1,133 @@
+cec@cec-ThinkCentre-M73:~$ gedit sam.sh
+cec@cec-ThinkCentre-M73:~$ bash sam.sh
+enter a directory name
+sai
+sam.sh: line 3: [!-d: command not found
+directory exist
+enter file no 1 name:
+sa1
+enter file no 2 name:
+sa2
+file created
+cec@cec-ThinkCentre-M73:~$ bash sam.sh
+enter a directory name
+sara
+sam.sh: line 3: [!-d: command not found
+directory exist
+enter file no 1 name:
+^C
+cec@cec-ThinkCentre-M73:~$ gedit sam.sh
+cec@cec-ThinkCentre-M73:~$ bash sam.sh
+enter a directory name
+sara
+sam.sh: line 3: [!: command not found
+directory exist
+enter file no 1 name:
+^C
+cec@cec-ThinkCentre-M73:~$ gedit sam.sh
+cec@cec-ThinkCentre-M73:~$ bash sam.sh
+enter a directory name
+sara
+sam.sh: line 3: [!: command not found
+directory exist
+enter file no 1 name:
+^C
+cec@cec-ThinkCentre-M73:~$ 
+cec@cec-ThinkCentre-M73:~$ gedit sam.sh
+cec@cec-ThinkCentre-M73:~$ bash sam.sh
+enter a directory name
+sara
+ directory created
+enter file no 1 name:
+s1
+enter file no 2 name:
+s2
+file created
+cec@cec-ThinkCentre-M73:~$ gedit sam.sh
+cec@cec-ThinkCentre-M73:~$ gedit difffile.sh
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s1.txt
+file name 2:
+s2.txt
+same content
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s1.txt
+file name 2:
+s2.txt
+same content
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s2.txt
+file name 2:
+s1.txt
+same content
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s3.txt
+file name 2:
+s1.txt 
+same content
+cec@cec-ThinkCentre-M73:~$ gedit difffile.sh
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s1.txt
+file name 2:
+s3.txt
+difffile.sh: line 5: diffs1.txt: command not found
+not same
+cec@cec-ThinkCentre-M73:~$ gedit difffile.sh
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s1.txt
+file name 2:
+s3.txt
+difffile.sh: line 5: diffs1.txt: command not found
+not same
+cec@cec-ThinkCentre-M73:~$ gedit difffile.sh
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s1.txt
+file name 2:
+s3.txt
+diff: s1.txt: No such file or directory
+diff: s3.txt: No such file or directory
+not same
+cec@cec-ThinkCentre-M73:~$ gedit difffile.sh
+^C
+cec@cec-ThinkCentre-M73:~$ gedit s1.txt
+cec@cec-ThinkCentre-M73:~$ gedit s2.txt
+^C
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s1.txt
+file name 2:
+s2.txt
+same content
+cec@cec-ThinkCentre-M73:~$ gedit s2.txt
+cec@cec-ThinkCentre-M73:~$ bash difffile.sh
+file name 1:
+s1.txt
+file name 2:
+s2.txt
+1c1
+< hello
+---
+> hellooo
+not same
+cec@cec-ThinkCentre-M73:~$ gedit dirorfile.sh
+cec@cec-ThinkCentre-M73:~$ bash dirorfile.sh
+ enter the name 
+sai
+directory
+cec@cec-ThinkCentre-M73:~$ bash dirorfile.sh
+ enter the name 
+s1.txt
+file
+cec@cec-ThinkCentre-M73:~$ bash dirorfile.sh
+ enter the name 
+sree
+this is something else
+cec@cec-ThinkCentre-M73:~$ 
+
