@@ -130,4 +130,53 @@ cec@cec-ThinkCentre-M73:~$ bash dirorfile.sh
 sree
 this is something else
 cec@cec-ThinkCentre-M73:~$ 
+9/05/24
+tudent@cec-ThinkCentre-M73:~/sai/network$ cat << myfile
+> rollno  name  mark
+> 1       ben   70
+> 2       sai   100
+> 3       sree  80
+> 4       ak    90
+> ^C
+student@cec-ThinkCentre-M73:~/sai/network$ cat > myfile
+rollno   name   mark
+1        ben    70
+2        sai    100
+3        sree   80
+4        ak     90
+^Z
+[1]+  Stopped                 cat > myfile
+student@cec-ThinkCentre-M73:~/sai/network$ head -n 2 myfile.txt
+head: cannot open 'myfile.txt' for reading: No such file or directory
+student@cec-ThinkCentre-M73:~/sai/network$ head -n 2 myfile
+rollno   name   mark
+1        ben    70
+student@cec-ThinkCentre-M73:~/sai/network$ tail -n 1 myfile
+4        ak     90
+student@cec-ThinkCentre-M73:~/sai/network$ cut -f 2 myfile
+rollno   name   mark
+1        ben    70
+2        sai    100
+3        sree   80
+4        ak     90
+student@cec-ThinkCentre-M73:~/sai/network$ -f 2 myfile
+-f: command not found
+student@cec-ThinkCentre-M73:~/sai/network$ wc myfile
+ 5 15 98 myfile
+student@cec-ThinkCentre-M73:~/sai/network$ cat > myfile
+rollno	name	mark
+1	ben	70
+2	sai	100	
+3	sree	80
+4	ak	90
+^Z
+[2]+  Stopped                 cat > myfile
+student@cec-ThinkCentre-M73:~/sai/network$ cut -f 2 myfile
+name
+ben
+sai
+sree
+ak
+student@cec-ThinkCentre-M73:~/sai/network$ 
+
 
